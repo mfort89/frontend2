@@ -28,7 +28,7 @@ import { HandSComponent } from './components/hand-s/hand-s.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
     
   ],
   providers: [],
