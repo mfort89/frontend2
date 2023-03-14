@@ -1,0 +1,13 @@
+.row{
+    padding: 20px;
+    background-color: beige;
+}
+
+.contenedor{
+    width: auto;
+}
+
+.parte1, .parte2{
+display: inline-block;
+text-align: justify;
+}

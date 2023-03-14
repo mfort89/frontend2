@@ -2,9 +2,11 @@
     padding: 20px;
 }
 div{
-    background-color: aqua;
+    background-color: rgb(13, 14, 14);
 }
 
-h1 , h3{
+h1 , h3 ,p{
     display: inline;
+    color: rgb(252, 249, 249);
+    
 }
