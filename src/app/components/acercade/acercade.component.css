@@ -1,16 +1,11 @@
 .row{
+    
     padding: 20px;
 }
 
 div{
     background-color: rgb(126, 126, 123);
-}
-
-
-#nombre{
-    font-weight: bold;
-    margin-top: 30%;
-    
+    text-align: center;
 }
 
 @media (min-width: 576px){
@@ -18,11 +13,37 @@ div{
         width: 15%;
         position: absolute;
         border-radius: 100%;
-        top: 425px;
         box-shadow: 3px 3px 3px black;
         left: 2%;
+        top: 425px;
+        
     }
 }
+
+@media (max-width: 575px){
+    #fotoperfil{
+        width: 30%;
+        position: absolute;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px black;
+        left: 35%;
+        top: 750px;
+        
+        
+    }
+}
+
+
+
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
+    margin-left: 10px;
+    
+}
+
+
+
 
     
 
