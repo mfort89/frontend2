@@ -1,11 +1,12 @@
 .row{
     padding: 20px;
+    color: rgb(252, 249, 249);
   
     
     
 }
 div{
-    background-color: aqua;
+    background-color: rgb(77, 78, 78);
 }
 
 h1 , h3{
