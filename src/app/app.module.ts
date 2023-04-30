@@ -11,15 +11,17 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { SkillComponent } from './components/skill/skill.component';
+import { HandSComponent } from './components/hand-s/hand-s.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { interceptorProvider } from './service/interceptor-service';
-
-
+import { AcercadeEditComponent } from './components/acercade/acercade-edit.component';
+import { ExperienciaNewComponent } from './components/experiencia/experiencia-new.component';
+import { ExperienciaEditComponent } from './components/experiencia/experiencia-edit.component';
+import { EducacionEditComponent } from './components/educacion/educacion-edit.component';
+import { EducacionNewComponent } from './components/educacion/educacion-new.component';
 
 
 
@@ -33,11 +35,16 @@ import { interceptorProvider } from './service/interceptor-service';
     AcercadeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    SkillComponent,
+    HandSComponent,
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    AcercadeEditComponent,
+    ExperienciaNewComponent,
+    ExperienciaEditComponent,
+    EducacionEditComponent,
+    EducacionNewComponent
   ],
   imports: [
     BrowserModule,
@@ -49,9 +56,7 @@ import { interceptorProvider } from './service/interceptor-service';
     
     
   ],
-  providers: [
-    interceptorProvider
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

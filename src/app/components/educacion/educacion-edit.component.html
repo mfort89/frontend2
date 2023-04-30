@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<div class="container -contFROM" *ngIf="educacion">
+<div class="row -rowESTILO -rowFORM">
+    <!--INICIO TITULO-->
+       <h2>
+        <span class="-fontWHITE">.</span>
+        <span class="-fontBLACK">educacion/edit</span>
+       </h2>
+       <!--FIN TITULO-->
+
+
+       <!--INICIO FORMULARIO-->
+       <div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+       <div class="form-group">
+        <label for="tituloEd">Titulo</label>
+        <input type="text" class="form-control" id="tituloEd" id name="tituloEd" [(ngModel)]="educacion.tituloEd" required>
+
+       </div>
+       <div class="form-group">
+        <label for="apellido">Institucion</label>
+        <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="educacion.institucion" required>
+       </div>
+       <div class="form-group">
+        <label for="titulo">Fecha Inicio</label>
+        <input tupe="text" class="form-control" id="fechaInicio" name="fechaInicio" [(ngModel)]="educacion.fechaInicio" required>
+       </div>
+       <div class="form-group">
+        <label for="descripcion">Fecha Fin</label>
+        <input type="text" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="educacion.fechaFin" required>   
+       </div>
+       <div class="form-group">
+        <label for="descripcionEd">Descripcion</label>
+        <textarea type="text" class="form-control" id="descripcionEd" name="descripcionEd" rows="3" [(ngModel)]="educacion.descripcionEd" required></textarea>
+       </div>
+
+       <!--INICIO BOTON -->
+       <div class="-btnOK">
+        <button class="btn btn-light">
+            <i class="fa-solid fa-thumbs-up"></i>
+        </button>
+       </div>
+       <!--FIN BOTON-->
+    </form>
+</div>
+
+
+</div>
+<app-footer></app-footer>
