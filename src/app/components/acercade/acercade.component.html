@@ -1,21 +1,25 @@
-<div class="row">
+<div class="row -row" >
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-<img src="../../../assets/fotoperfil.jpeg" class="img-fluid" id="fotoperfil">
+<img src="{{persona.img}}" alt="Foto de perfil" class="img-fluid" id="fotoPerfil">
 
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <h1 id="nombre">{{persona.nombre}}{{persona.apellido}}</h1>
+        <h1>{{persona.nombre}}  {{persona.apellido}}</h1>
         <p>{{persona.titulo}}</p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <span>
-            <h1>
-                Acerca de mí
-            </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sint veniam totam culpa ut, assumenda eligendi excepturi harum magni quisquam 
-                dignissimos quia aperiam ex, asperiores alias minus nisi ullam, magnam quas?</p>
-        </span>
+     <div class="float-end" *ngIf="isLogged">
+        <a href="#" class="btnCRUD" routerLink="/acerca-edit/1">
+            <i class="fa fa-pen"></i>
+        </a>
+     </div>
+<span>
+    <h2><span class="-fontWHITE">.</span>
+        <span class="-fontBLACK">acerca de mi</span>></h2>
+        <p class="--acercaDe">
+            {{persona.descripcion}}
+        </p>
+</span>
     </div>
 </div>
 

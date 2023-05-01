@@ -1,30 +1,44 @@
-<div class="row">
-    <h1>Experiencia Laboral</h1>
-    <div class="col-lg-1"></div>
-        <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1 >Trabajo 1</h1> - <h3>(years)</h3>
-            </li>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis veniam accusamus vitae sint 
-                similique adipisci ex natus labore quibusdam ut, qui dolor quod nisi maiores distinctio 
-                tempora quia placeat incidunt!</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Trabajo 2</h1> - <h3>(years)</h3>
-            </li>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis veniam accusamus vitae sint 
-                similique adipisci ex natus labore quibusdam ut, qui dolor quod nisi maiores distinctio 
-                tempora quia placeat incidunt!</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Trabajo 3</h1> - <h3>(years)</h3>
-            </li>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis veniam accusamus vitae sint 
-                similique adipisci ex natus labore quibusdam ut, qui dolor quod nisi maiores distinctio 
-                tempora quia placeat incidunt!</p>
-        </ul>
+<div class="row -rowESTILO">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+      <!-- INICIO BOTON AGREGAR -->
+      <div class="float-end" *ngIf="isLogged">
+        <a href="#" class="-btnCRUD" routerLink="/experiencia-new">
+          <i class="fas fa-plus"></i>
+        </a>
+      </div>
+      <!-- FIN BOTON AGREGAR -->
+  
+      <!-- INICIO TITULO -->
+      <h2>
+        <span class="-fontBLACK">.</span>
+        <span class="-fontWHITE">experiencia</span>
+      </h2>
+      <!-- FIN TITULO -->
+  
+      <!-- INICIO LISTA -->
+      <dl *ngFor="let experiencia of experienciaArray">
+  
+        <!-- INICIO BOTON EDITAR Y BORRAR -->
+        <div class="float-end" *ngIf="isLogged">
+          <a href="#" class="-btnCRUD" routerLink="/experiencia-edit/{{experiencia.id}}">
+            <i class="fa fa-pen"></i>
+          </a>
+          <a href="#" class="-btnCRUD" (click)="delete(experiencia.id)">
+            <i class="fas fa-trash-alt"></i>
+          </a>
+        </div>
+        <!-- FIN BOTON EDITAR Y BORRAR -->
+  
+        <!-- INICIO DATOS -->
+        <dt class="-fontTITULO -fontWHITE">{{experiencia.tituloEx}}</dt>
+        <dd class="fst-italic mb-0">{{experiencia.empleador}}</dd>
+        <dd class="text-muted mb-0">{{experiencia.fechaInicio}} - {{experiencia.fechaFin}}</dd>
+        <dd class="-mb18PX">{{experiencia.descripcionEx}}</dd>
+        <!-- FIN DATOS -->
+  
+      </dl>
+      <!-- FIN LISTA -->
     </div>
-</div>
+  </div>
+  

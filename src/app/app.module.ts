@@ -26,6 +26,7 @@ import { EducacionNewComponent } from './components/educacion/educacion-new.comp
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import { EducacionNewComponent } from './components/educacion/educacion-new.comp
     ExperienciaNewComponent,
     ExperienciaEditComponent,
     EducacionEditComponent,
-    EducacionNewComponent
+    EducacionNewComponent,
+   
   ],
   imports: [
     BrowserModule,
